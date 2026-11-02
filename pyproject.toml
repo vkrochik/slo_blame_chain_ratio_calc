@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "vkrochik-oplib_jd426"
+name = "vkrochik-slo_blame_chain_ratio_calc"
 version = "0.1.0"
 description = "从输入中抽取数值，计算算子库维护工程师·SLO 违约的归因链路相关的比值与占比，分母为零时明确报错"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://vkrochik.github.io"
-Repository = "https://github.com/vkrochik/oplib_jd426"
-Issues = "https://github.com/vkrochik/oplib_jd426/issues"
+Repository = "https://github.com/vkrochik/slo_blame_chain_ratio_calc"
+Issues = "https://github.com/vkrochik/slo_blame_chain_ratio_calc/issues"
 
 [project.scripts]
-oplib_jd426 = "oplib_jd426:main"
+slo_blame_chain_ratio_calc = "slo_blame_chain_ratio_calc:main"
 
 [tool.setuptools]
-py-modules = ["oplib_jd426"]
+py-modules = ["slo_blame_chain_ratio_calc"]

@@ -1,11 +1,11 @@
-# oplib_jd426
+# slo_blame_chain_ratio_calc
 
 **算出算子库维护工程师·SLO 违约的归因链路里各项的占比与比值。**
 
-`oplib_jd426` —— 从输入中抽取数值，计算算子库维护工程师·SLO 违约的归因链路相关的比值与占比，分母为零时明确报错
+`slo_blame_chain_ratio_calc` —— 从输入中抽取数值，计算算子库维护工程师·SLO 违约的归因链路相关的比值与占比，分母为零时明确报错
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`oplib_jd426.py` 拷走就能用
+- 单文件，`slo_blame_chain_ratio_calc.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install vkrochik-oplib_jd426
+pip install vkrochik-slo_blame_chain_ratio_calc
 ```
 
 装完直接用命令名调用：
 
 ```bash
-oplib_jd426 --help
+slo_blame_chain_ratio_calc --help
 ```
 
-也可以不用安装，直接把 `oplib_jd426.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `slo_blame_chain_ratio_calc.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ oplib_jd426 --help
 ## 用法
 
 ```bash
-python oplib_jd426.py --file input.txt
-python oplib_jd426.py --text "示例内容"
-python oplib_jd426.py --file input.txt --json
+python slo_blame_chain_ratio_calc.py --file input.txt
+python slo_blame_chain_ratio_calc.py --text "示例内容"
+python slo_blame_chain_ratio_calc.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python oplib_jd426.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_oplib_jd426.py
+python test_slo_blame_chain_ratio_calc.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_oplib_jd426.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/vkrochik/oplib_jd426>
+- GitHub 仓库：<https://github.com/vkrochik/slo_blame_chain_ratio_calc>
 
 ---
 
@@ -79,7 +79,7 @@ python test_oplib_jd426.py
 vkrochik 做算子库维护工程师·SLO 违约的归因链路相关的问题，方向对标生数科技的实习算子库维护工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://vkrochik.github.io>
-- 仓库：<https://github.com/vkrochik/oplib_jd426>
+- 仓库：<https://github.com/vkrochik/slo_blame_chain_ratio_calc>
 
 ## 许可
 
